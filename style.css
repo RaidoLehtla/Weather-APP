@@ -1,0 +1,107 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  /* background-image: url('https://source.unsplash.com/random/2560x1440/?landscape'); */
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+button {
+  width: 4rem;
+  height: 4rem;
+  margin: 0.5rem;
+  border-radius: 50%;
+  border: none;
+  background: #fcfcfc34;
+  transition: 0.3s ease-in-out;
+}
+button:hover {
+  background: #fcfcfc98;
+  cursor: pointer;
+}
+
+.card {
+  /* display: flex; */
+  /* justify-content: stretch; */
+  /* align-items: center; */
+  background: #000000a7;
+  padding: 2.6rem;
+  border-radius: 16px;
+  /* width: 100%; */
+  width: 100%;
+  max-width: 36rem;
+}
+
+input.search-bar {
+  margin-bottom: 2rem;
+  height: 3.2rem;
+  width: 80%;
+  border: none;
+  border-radius: 11px;
+  background: #fcfcfc34;
+  font-family: inherit;
+  color: #fff;
+  font-size: 140%;
+  padding: 2rem;
+  text-transform: capitalize;
+  /* text-transform: uppercase; */
+}
+
+h1.temp {
+  margin: 0;
+}
+
+.description,
+.humidity,
+.wind {
+  font-size: 1.4rem;
+}
+
+.description {
+  text-transform: capitalize;
+  margin-left: 8px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+/* .weather.loading {
+  visibility: hidden;
+  max-height: 20px;
+  position: relative;
+}
+
+.weather.loading::after {
+  visibility: visible;
+  content: 'Loading...';
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 20px;
+} */
+
+@media (max-width: 34rem) {
+  .card {
+    padding: 1.2rem;
+    max-width: 32rem;
+  }
+}
